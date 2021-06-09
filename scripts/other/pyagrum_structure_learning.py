@@ -1,3 +1,19 @@
+# coding: utf-8
+
+#! /usr/bin/env python
+
+#========================================================================================================#
+#  Copyright (c) 2017-present, Bahar Irfan                                                               #
+#                                                                                                        #                      
+#  pyagrum_structure_learning applies structure learning on the Multi-modal Long-Term Recognition Dataset#
+#                                                                                                        #
+#  Please cite the following work if using this code:                                                    #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
+#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
+#                                                                                                        #            
+#  Each script in this project is under the GNU General Public License.                                  #
+#========================================================================================================#
+
 import pyAgrum as gum
 import os
 import pandas as pd

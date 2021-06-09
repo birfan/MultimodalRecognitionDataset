@@ -15,9 +15,8 @@
 #    Identification in HRI', 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
 #    Robots in the Wild workshop.                                                                        #
 #                                                                                                        #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Incremental     #
-#    Bayesian Network with Online Learning for Open World User Identification', ACM Transactions on      #
-#    Human-Robot Interaction (THRI).                                                                     #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
+#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
 #                                                                                                        #
 #  The pyAgrum library is used for implementing the Bayesian network structure:                          #
 #    Gonzales, Christophe and Torti, Lionel and Wuillemin, Pierre-Henri (2017), 'aGrUM: a Graphical      #

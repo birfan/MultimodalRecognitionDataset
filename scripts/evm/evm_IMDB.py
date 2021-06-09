@@ -9,9 +9,8 @@
 #  Recognition Dataset.                                                                                  #
 #                                                                                                        #
 #  Please cite the following work if using this code:                                                    #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Incremental     #
-#    Bayesian Network with Online Learning for Open World User Identification', ACM Transactions on      #
-#    Human-Robot Interaction (THRI).                                                                     #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
+#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
 #                                                                                                        #
 #    Ethan M. Rudd, Lalit P. Jain, Walter J. Scheirer and Terrance E. Boult (2018), "The Extreme Value   #
 #    Machine" in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 40, no. 3.         #

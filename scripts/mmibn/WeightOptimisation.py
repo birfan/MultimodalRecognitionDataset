@@ -14,9 +14,8 @@
 #    Identification in HRI', 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
 #    Robots in the Wild workshop.                                                                        #
 #                                                                                                        #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Incremental     #
-#    Bayesian Network with Online Learning for Open World User Identification', ACM Transactions on      #
-#    Human-Robot Interaction (THRI).                                                                     #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
+#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
 #                                                                                                        #
 #  * Bayesian optimisation is a variant of the code by Thomas Huijskens:                                 #
 #    https://github.com/thuijskens/bayesian-optimization                                                 #

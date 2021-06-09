@@ -13,9 +13,8 @@
 #    Identification in HRI', 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
 #    Robots in the Wild workshop.                                                                        #
 #                                                                                                        #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Incremental     #
-#    Bayesian Network with Online Learning for Open World User Identification', ACM Transactions on      #
-#    Human-Robot Interaction (THRI).                                                                     #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
+#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
 #                                                                                                        #            
 #  This script, RecognitionMemory and each script in this project is under the GNU General Public        #
 #  License.                                                                                              #
@@ -55,7 +54,7 @@ if __name__ == "__main__":
     num_people = 100
 
     update_methods = ["none", "evidence"]
-    dest_main = "ColombiaExperiment/"
+    dest_main = "HRIExperiment/"
     normMethod = "hybrid"
     db_file = "db_data.csv"
     init_recog_file = "InitialRecognition_data.csv"
@@ -70,6 +69,10 @@ if __name__ == "__main__":
     optim_file = "optim_params.csv"
 
     optim_values = pandas.read_csv(dest_main + optim_file, dtype={"Evidence_method": object, "Norm_method": object, "Optim_params":object}, usecols = {"Evidence_method", "Norm_method", "Optim_params"})
+
+    with open(dest_main + stats_file, 'w') as outcsv:
+        writer = csv.writer(outcsv)   
+        writer.writerow(["Model","FAR","FR_FAR","DIR","FR_DIR","Loss","FR_Loss","Num_recog","Num_enrolled","Total_Time"])
 
     for updateMethod in update_methods:
         start_time = time.time()
@@ -89,22 +92,21 @@ if __name__ == "__main__":
             weights.insert(0, faceWeight)
 
         RB = RecognitionMemory.RecogniserBN()
+        start_time_run = time.time()
         num_recog, FER, stats_openSet, stats_FR, num_unknown = RB.runCrossValidation(num_people, results_folder, None, 
 	   None, None, None, None, isTestData = False, isOpenSet = False,
 	   weights = weights, faceRecogThreshold = None, qualityThreshold = qualityThreshold, normMethod = normMethod, updateMethod = updateMethod, probThreshold = None,
 	   isMultRecognitions = False, num_mult_recognitions = 3, qualityCoefficient = None,
 	   db_file = db_file_model, init_recog_file = init_recog_file_model, final_recog_file = final_recog_file_model, valid_info_file = None,
 	   isSaveRecogFiles = isSaveRecogFiles, isSaveImageAn = isSaveImageAn)
-      
+        time_run = time.time()-start_time_run
         loss = cost_function_alpha*(1.0 - stats_openSet[0]) + (1.0-cost_function_alpha)*(stats_openSet[1])
         F_Loss = cost_function_alpha*(1.0 - stats_FR[0]) + (1.0-cost_function_alpha)*(stats_FR[1])
 
         with open(dest_main + stats_file, 'a') as outcsv:
             writer = csv.writer(outcsv)   
-            writer.writerow([model_name, stats_openSet[1], stats_FR[1], stats_openSet[0], stats_FR[0], loss, F_Loss, num_recog, num_unknown])      
+            writer.writerow([model_name, stats_openSet[1], stats_FR[1], stats_openSet[0], stats_FR[0], loss, F_Loss, num_recog, num_unknown, time_run])      
 
         for matrix_f in ["Network", "FaceRecognition"]:
             conf_file = conf_matrix_file.replace(".csv", matrix_f + ".csv")
             plotConfusionMatrix(results_folder, conf_file)
-
-        print "time for " + model_name + ":" + str(time.time() - start_time)

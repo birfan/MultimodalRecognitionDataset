@@ -9,9 +9,8 @@
 %  images in the dataset.                                                                                %
 %                                                                                                        %
 %  Please cite the following work if using this code:                                                    %
-%    B. Irfan, N. Lyubova, M. Garcia Ortiz, and T. Belpaeme (2018), 'Multi-modal Open-Set Person         %
-%    Identification in HRI', 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    %
-%    Robots in the Wild workshop.                                                                        %
+%    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User %
+%    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                %
 %                                                                                                        %
 %  * Face cropped images of IMDB dataset in IMDB-Wiki dataset are used for this purpose:                 %
 %    R. Rothe and R. Timofte and L. Van Gool (2016), 'Deep expectation of real and apparent age from a   %
