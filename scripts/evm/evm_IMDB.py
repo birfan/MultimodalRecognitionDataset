@@ -279,6 +279,8 @@ def learnFromFileEVM(RB, max_num_people, num_people = 0, open_set_threshold = 0.
                     if num_recog < tailsize + 1:
                         Xtrain.append(Xtest)
                         ytrain.append(idPerson)
+                        Xtrain_np = np.array(Xtrain)
+                        ytrain_np = np.array(ytrain)
                     elif num_recog == tailsize + 1:
                         Xtrain.append(Xtest)
                         ytrain.append(idPerson)
