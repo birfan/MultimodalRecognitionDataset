@@ -9,13 +9,16 @@
 #  Recognition Dataset.                                                                                  #
 #                                                                                                        #
 #  Please cite the following work if using this code:                                                    #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
-#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
+#                                                                                                        #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (2021), "Multi-modal Open World User         #
+#    Identification", Transactions on Human-Robot Interaction (THRI), 11 (1), ACM.                       #
 #                                                                                                        #
 #    Ethan M. Rudd, Lalit P. Jain, Walter J. Scheirer and Terrance E. Boult (2018), "The Extreme Value   #
 #    Machine" in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 40, no. 3.         #
 #                                                                                                        #
-#  evm_IMDB and each script in this project is under the GNU General Public License.                     #
+#  evm_IMDB and each script in this project is under the GNU General Public License v3.0. You should     #
+#  have received a copy of the license along with MultimodalRecognition. If not, see                     #
+#  <http://www.gnu.org/licenses>.                                                                        #
 #========================================================================================================#
 
 import RecognitionMemory as RM

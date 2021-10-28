@@ -11,19 +11,23 @@
 #  soft biometrics, namely, gender, age, and height estimations and the time of interaction.             #
 #                                                                                                        #
 #  Please cite the following work if using this code:                                                    #
-#    B. Irfan, N. Lyubova, M. Garcia Ortiz, and T. Belpaeme (2018), 'Multi-modal Open-Set Person         #
-#    Identification in HRI', 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
+#                                                                                                        #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (2021), "Multi-modal Open World User         #
+#    Identification", Transactions on Human-Robot Interaction (THRI), 11 (1), ACM.                       #
+#                                                                                                        #
+#    B. Irfan, N. Lyubova, M. Garcia Ortiz, and T. Belpaeme (2018), "Multi-modal Open-Set Person         #
+#    Identification in HRI", 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
 #    Robots in the Wild workshop.                                                                        #
 #                                                                                                        #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
-#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
-#                                                                                                        #
 #  The pyAgrum library is used for implementing the Bayesian network structure:                          #
-#    Gonzales, Christophe and Torti, Lionel and Wuillemin, Pierre-Henri (2017), 'aGrUM: a Graphical      #
-#    Universal Model framework', Proceedings of the 30th International Conference on Industrial          #
+#                                                                                                        #
+#    Gonzales, Christophe and Torti, Lionel and Wuillemin, Pierre-Henri (2017), "aGrUM: a Graphical      #
+#    Universal Model framework", Proceedings of the 30th International Conference on Industrial          #
 #    Engineering, Other Applications of Applied Intelligent Systems.                                     #
 #                                                                                                        #                      
-#  RecognitionMemory and each script in this project is under the GNU General Public License.            #
+#  RecognitionMemory and each script in this project is under the GNU General Public License v3.0.       #
+#  You should have received a copy of the license along with MultimodalRecognitionDataset. If not,       #
+#  see <http://www.gnu.org/licenses>.                                                                    #
 #========================================================================================================#
 
 import pyAgrum as gum

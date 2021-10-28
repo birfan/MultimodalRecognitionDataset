@@ -8,27 +8,30 @@
 #  imdb_prepareImages script creates the cross validation set for evaluation of MMIBN in                 #
 #  RecogniserMemory using crossValidation functions and artificialDataset for creating artificial        #
 #  estimates of height and time of interaction, which are missing from the IMDB dataset*. The images are #
-#  previously cleaned by NAOqi face detection and manually for removing images without a face detecting. #
+#  previously cleaned by NAOqi face detection and manually for removing images without a face detected.  #
 #  See the MATLAB code imdb_face_crossval_extraction.m, for details of choosing the images in the        #
 #  dataset.                                                                                              # 
 #                                                                                                        #
 #  Please cite the following work if using this code:                                                    #
-#    B. Irfan, N. Lyubova, M. Garcia Ortiz, and T. Belpaeme (2018), 'Multi-modal Open-Set Person         #
-#    Identification in HRI', 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
+#                                                                                                        #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (2021), "Multi-modal Open World User         #
+#    Identification", Transactions on Human-Robot Interaction (THRI), 11 (1), ACM.                       #
+#                                                                                                        #
+#    B. Irfan, N. Lyubova, M. Garcia Ortiz, and T. Belpaeme (2018), "Multi-modal Open-Set Person         #
+#    Identification in HRI", 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
 #    Robots in the Wild workshop.                                                                        #
 #                                                                                                        #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
-#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
-#                                                                                                        #
 #  * Face cropped images of IMDB dataset in IMDB-Wiki dataset are used for this purpose:                 #
-#    R. Rothe and R. Timofte and L. Van Gool (2016), 'Deep expectation of real and apparent age from a   #
-#    single image without facial landmarks', International Journal of Computer Vision (IJCV).            #
 #                                                                                                        #
-#    R. Rothe, R. Timofte and L. Van Gool (2018), 'Deep expectation of real and apparent age from a      #
-#    single image without facial landmarks', International Journal of Computer Vision, vol. 126, no. 2-4.#
+#    R. Rothe, R. Timofte and L. Van Gool (2018), "Deep expectation of real and apparent age from a      #
+#    single image without facial landmarks", International Journal of Computer Vision, vol. 126, no. 2-4.#
+#                                                                                                        #
+#    R. Rothe and R. Timofte and L. Van Gool (2016), "Deep expectation of real and apparent age from a   #
+#    single image without facial landmarks", International Journal of Computer Vision (IJCV).            #
 #                                                                                                        #
 #  imdb_prepareImages, RecognitionMemory and each script in this project is under the GNU General Public #
-#  License.                                                                                              #
+#  License v3.0. You should have received a copy of the license along with MultimodalRecognitionDataset. #
+#  If not, see <http://www.gnu.org/licenses>.                                                            #
 #========================================================================================================#
 
 from PIL import Image

@@ -1,23 +1,27 @@
 %========================================================================================================%
 %  Copyright (c) 2018-present, Bahar Irfan                                                               %
 %                                                                                                        %                      
-%  imdb_face_crossval_extraction script chooses the users from the IMDB dataset     %
-%  RecogniserMemory using crossValidation functions and artificialDataset for creating artificial        %
-%  estimates of height and time of interaction, which are missing from the IMDB dataset*. The images are %
-%  previously cleaned by NAOqi face detection and manually for removing images without a face detecting. %
-%  See the MATLAB code imdb_face_crossval_extraction.m in imdb_crop folder, for details of choosing the  %
-%  images in the dataset.                                                                                %
+%  imdb_face_crossval_extraction script chooses the users from the IMDB dataset using crossValidation    %
+%  functions and artificialDataset for creating artificial estimates of height and time of interaction,  %
+%  which are missing from the IMDB dataset*. The images are previously cleaned by NAOqi face detection   %
+%  and manually for removing images without a face detected.                                             %
 %                                                                                                        %
 %  Please cite the following work if using this code:                                                    %
-%    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User %
-%    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                %
+%                                                                                                        %
+%    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (2021), "Multi-modal Open World User         %
+%    Identification", Transactions on Human-Robot Interaction (THRI), 11 (1), ACM.                       %
 %                                                                                                        %
 %  * Face cropped images of IMDB dataset in IMDB-Wiki dataset are used for this purpose:                 %
-%    R. Rothe and R. Timofte and L. Van Gool (2016), 'Deep expectation of real and apparent age from a   %
-%    single image without facial landmarks', International Journal of Computer Vision (IJCV).            %
-%                                                                                                        %            
-%  imdb_face_crossval_extraction, RecognitionMemory and each script in this project is under the         %
-%  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.                      %
+%                                                                                                        %
+%    R. Rothe, R. Timofte and L. Van Gool (2018), "Deep expectation of real and apparent age from a      %
+%    single image without facial landmarks", International Journal of Computer Vision, vol. 126, no. 2-4.%
+%                                                                                                        %
+%    R. Rothe and R. Timofte and L. Van Gool (2016), "Deep expectation of real and apparent age from a   %
+%    single image without facial landmarks", International Journal of Computer Vision (IJCV).            %  
+%                                                                                                        %         
+%  imdb_face_crossval_extraction and each script in this project is under the GNU General Public         %
+%  License v3.0. You should have received a copy of the license along with MultimodalRecognitionDataset. %
+%  If not, see <http://www.gnu.org/licenses/>.                                                           %
 %========================================================================================================%
 
 % in matlab:

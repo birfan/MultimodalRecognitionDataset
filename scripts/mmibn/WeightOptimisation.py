@@ -10,18 +10,20 @@
 #  and tests sets from data, and calls runCrossValidation in RecognitionMemory.                          #
 #                                                                                                        #
 #  Please cite the following work if using this code:                                                    #
-#    B. Irfan, N. Lyubova, M. Garcia Ortiz, and T. Belpaeme (2018), 'Multi-modal Open-Set Person         #
-#    Identification in HRI', 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
-#    Robots in the Wild workshop.                                                                        #
 #                                                                                                        #
-#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (under review), 'Multi-modal Open World User #
-#    Identification', ACM Transactions on Human-Robot Interaction (THRI).                                #
+#    B. Irfan, M. Garcia Ortiz, N. Lyubova, and T. Belpaeme (2021), "Multi-modal Open World User         #
+#    Identification", Transactions on Human-Robot Interaction (THRI), 11 (1), ACM.                       #
+#                                                                                                        #
+#    B. Irfan, N. Lyubova, M. Garcia Ortiz, and T. Belpaeme (2018), "Multi-modal Open-Set Person         #
+#    Identification in HRI", 2018 ACM/IEEE International Conference on Human-Robot Interaction Social    #
+#    Robots in the Wild workshop.                                                                        #
 #                                                                                                        #
 #  * Bayesian optimisation is a variant of the code by Thomas Huijskens:                                 #
 #    https://github.com/thuijskens/bayesian-optimization                                                 #
 #                                                                                                        #          
-#  WeightOptimisation, RecognitionMemory and each script in this project is under the GNU General Public #
-#  License.                                                                                              #
+#  This script, RecognitionMemory and each script in this project is under the GNU General Public        #
+#  License v3.0. You should have received a copy of the license along with MultimodalRecognitionDataset. #
+#  If not, see <http://www.gnu.org/licenses>.                                                            # 
 #========================================================================================================#
 
 import RecognitionMemory as RM
